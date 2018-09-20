@@ -1,9 +1,19 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>contact</title>
-</head>
+<title>contact me</title>
+<style>
+	/*Form styles*//*Alt i midten*/
+	form {
+		width: 40vw;
+		margin: 20px auto;
+		border: 1px solid red;
+		padding: 20px;
+	}
+
+	</style>
+	</head>
 	
 <!--Navigation-->
 <nav><a href="indexmarc.html">Home</a>
@@ -14,5 +24,34 @@
 	
 
 <body>
+<header>
+  <h1>Contact me!</h1>
+</header>
+<!--webform-->
+<form action"mailto:jasonne@live.dk" method="post" enctype="text/plain">
+  <p>
+    <label>Your Name:</label>
+  </p>
+  <p>
+    <input type="text" name="name" placeholder="Full name..." autofocus reguired>
+  </p>
+	  <p>
+    <label>Youe email:</label>
+  </p>
+  <p>
+    <input type="text" name="email" placeholder="Email adress..." autofocus reguired>
+  </p>
+	<!--kommentar-->
+	<p>
+    <label>Yout Massage:</label>
+  </p>
+	<p><textarea name="comment" placeholder="your message..."></textarea></p>
+	<!--Radio buttom-->
+	<p>I love this!<input type="radio" name="love"></p>
+	<!--submit buttom-->
+	<p>
+		<input type="submit" value="Submit Form">
+	</p>
+</form>
 </body>
 </html>
