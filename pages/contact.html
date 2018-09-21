@@ -4,54 +4,83 @@
 <meta charset="UTF-8">
 <title>contact me</title>
 <style>
-	/*Form styles*//*Alt i midten*/
-	form {
-		width: 40vw;
-		margin: 20px auto;
-		border: 1px solid red;
-		padding: 20px;
+/*layout*/
+#container {
+	width: 80%;
+	min-height: 90vh;
+	margin: auto;
+	border: 1px solid black;
+}
+	#header{
+		border-bottom: 1px solid black;
+		padding: 10px;
+		text-align: center;
+		background-color: #0063FF;
 	}
-
-	</style>
-	</head>
-	
-<!--Navigation-->
-<nav><a href="../index.html">Home</a>
-	<a href="hello-world.html" target="_self">Hello world!</a>
-	<a href="https://www.cphbusiness.dk/" target="_blank">My School</a>
-	<a href="the_animal_table.html">the animal table</a>
-	<a href="#">Contact</a></nav>	
-	
-
+	#nav{
+		border-bottom: 1px solid black;
+		padding: 10px;
+	}
+	#main{
+		
+		padding: 10px;
+	}
+/*Form styles*//*Alt i midten*/
+form {
+	width: 40vw;
+	margin: 20px auto;
+	border: 1px solid red;
+	padding: 20px;
+}
+</style>
+</head>
 <body>
-<header>
-  <h1>Contact me!</h1>
-</header>
-<!--webform-->
-<form action"mailto:jasonne@live.dk" method="post" enctype="text/plain">
-  <p>
-    <label>Your Name:</label>
-  </p>
-  <p>
-    <input type="text" name="name" placeholder="Full name..." autofocus reguired>
-  </p>
-	  <p>
-    <label>Youe email:</label>
-  </p>
-  <p>
-    <input type="text" name="email" placeholder="Email adress..." autofocus reguired>
-  </p>
-	<!--kommentar-->
-	<p>
-    <label>Yout Massage:</label>
-  </p>
-	<p><textarea name="comment" placeholder="your message..."></textarea></p>
-	<!--Radio buttom-->
-	<p>I love this!<input type="radio" name="love"></p>
-	<!--submit buttom-->
-	<p>
-		<input type="submit" value="Submit Form">
-	</p>
-</form>
+<!--main layout container. kasser indenfor kasser-->
+<div id="container">
+  <div id="header">
+    <header>
+      <h1>Contact me!</h1>
+    </header>
+  </div>
+  <div id="nav"><!--Navigation-->
+    <nav><a href="../index.html">Home</a> <a href="hello-world.html" target="_self">Hello world!</a> <a href="https://www.cphbusiness.dk/" target="_blank">My School</a> <a href="the_animal_table.html">the animal table</a> <a href="#">Contact</a></nav>
+  </div>
+  <div id="main"> 
+    <!--webform-->
+    <form action"mailto:jasonne@live.dk" method="post" enctype="text/plain">
+      <p>
+        <label>Your Name:</label>
+      </p>
+      <p>
+        <input type="text" name="name" placeholder="Full name..." autofocus reguired>
+      </p>
+      <p>
+        <label>Youe email:</label>
+      </p>
+      <p>
+        <input type="text" name="email" placeholder="Email adress..." autofocus reguired>
+      </p>
+      <!--kommentar-->
+      <p>
+        <label>Yout Massage:</label>
+      </p>
+      <p>
+        <textarea name="comment" placeholder="your message..."></textarea>
+      </p>
+      <!--Radio buttom-->
+      <p>I love this!
+        <input type="radio" name="love">
+      </p>
+      <p>I hate it!
+        <input type="radio" name="love">
+      </p>
+      <!--submit buttom-->
+      <p>
+        <input type="submit" value="Submit Form">
+      </p>
+    </form>
+  </div>
+  <div id="footer"></div>
+</div>
 </body>
 </html>
