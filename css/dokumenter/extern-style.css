@@ -1,0 +1,50 @@
+@charset "UTF-8";
+/* CSS Document */
+
+p {
+	color: orange;
+	font-family: "helvetica", "arial", sans-serif; 
+	/*justering af tekst*/
+	text-align: justify;
+	/*justering af linjehøjde, både i px eller %*/
+	line-height: 140%;
+	/*paragrafens bredde*/
+	width: 400px;
+}
+
+body {
+	background-color: mediumspringgreen; 
+	background-image: url(../dog.jpg);
+	background-repeat: no-repeat;
+	/*background-position: center;*/
+	background-size: cover;
+}
+h1 {
+	font-family: 'Crete Round', serif;
+	font-style: italic;
+	/*tykkelsen på foten; normal, bold eller tal*/
+	font-weight: normal;
+	font-size: 50px;
+}
+/*styling af link, styling af hele linket*/
+a {
+	color: gold;
+	text-decoration: none;
+}
+/*styling af det første stadie*/
+a:link {
+	color:darkgoldenrod;
+}
+/*styling af det andet stadie*/
+a:visited {
+	color:hotpink;
+	font-family: "helvetica";
+}
+/*styling af det trejde stadie, når musen er henover*/
+a:hover {
+	color:orangered;
+}
+/*styling af det trejde stadie, når der bliver trykket*/
+a:active {
+	color:greenyellow;
+}
