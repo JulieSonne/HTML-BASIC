@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>styling med flexbox</title>
+	<style>
+			
+		.container {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between; /*fordeler "børnene" (flex-items) vandret*/
+			height: 500px;
+			background-color: #ddd;
+			align-items: flex-start; /*fordeler "børnene" (flex-items) lodret*/
+			align-content: flex-end;/*fordeler "børnene", når de ligger i flere rækker*/
+		}
+		.flex-item {
+			background-color: lightblue;
+			margin: 10px;
+			padding: 10px;
+			width: 200px; 
+		}
+		.flex-item-special {
+			background-color: cornflowerblue;
+			order: 1; /*ændrer dette barns placering i rækkefølgen, kan også skrive minus*/
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<!--Div er altid et block elementer-->
+		<div class="flex-item">1</div>
+		<div class="flex-item">2</div>
+		<div class="flex-item">3</div>
+		<div class="flex-item flex-item-special">4</div> <!--gav div en ekstra class-->
+		<div class="flex-item">5</div>
+		<div class="flex-item">6</div>
+	</div>
+</body>
+</html>

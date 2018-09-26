@@ -24,16 +24,30 @@ h1 {
 	font-style: italic;
 	/*tykkelsen på foten; normal, bold eller tal*/
 	font-weight: normal;
-	font-size: 50px;
+	font-size: 50px;}
 	
+/*id starter med #*/
+/*skal man ikke bruge flere gange*/
 	#den-foerste {
 		color:red;
 	}
+	
+/*class starter med .*/
+/*class kan bruges flere gange*/
+	.fire-ben {
+		color: green;
+	}
+
+.to-ben {
+	color: brown;
 }
+
 /*styling af link, styling af hele linket*/
 a {
 	color: gold;
 	text-decoration: none;
+	/*her ændres a og hvordan det ses, før var a et "inline-element", nu er det et "block-element"*/
+	display: block;
 }
 /*styling af det første stadie*/
 a:link {
@@ -51,4 +65,43 @@ a:hover {
 /*styling af det trejde stadie, når der bliver trykket*/
 a:active {
 	color:greenyellow;
+}
+
+span {
+	font-weight: bold;
+}
+
+span.highlight {
+	background: yellow;
+}
+
+#kasse1 {
+	background-color: #ddd;
+	margin: 50px;
+	border-width: 2px;
+	border-style: solid; 
+	border-color: black;
+	width: 50%;
+	float: left;
+	
+}
+#kasse2 {
+	background-color: #eee;
+	padding: 50px;
+	border: 2px dotted black; /*shortcode til de tre border-værdier*/
+	width: 300px; 
+	height: 350px;
+	float: right;
+}
+.tekst {
+	position:absolute; 
+	top: 20px; 
+	right: 31px;
+	border: 1px solid black;
+	width: 100px;
+}
+.teskt2 {
+	position: relative;
+	top: 100px;
+	left: 100px;
 }
