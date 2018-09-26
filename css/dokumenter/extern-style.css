@@ -25,6 +25,10 @@ h1 {
 	/*tykkelsen på foten; normal, bold eller tal*/
 	font-weight: normal;
 	font-size: 50px;
+	
+	#den-foerste {
+		color:red;
+	}
 }
 /*styling af link, styling af hele linket*/
 a {
