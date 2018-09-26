@@ -14,7 +14,7 @@ p {
 
 body {
 	background-color: mediumspringgreen; 
-	background-image: url(../dog.jpg);
+	background-image: url(../billeder/dog.jpg);
 	background-repeat: no-repeat;
 	/*background-position: center;*/
 	background-size: cover;
