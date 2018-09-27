@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="UTF-8">
+	<title>Tips og tricks med Morten</title>
+	<style>
+div {
+	width: 300px;
+	height: 100px;
+}
+#my-shadow {
+	background: orange;
+	box-shadow: 5px 20px 5px #666;/*Skygge*/
+}
+#my-gradient {
+background: linear-gradient(red, orange); /*man kan tilføje flere farver*/
+}
+		
+#my-rotation {
+background: orange;	
+transform: rotate(-15deg);
+		}
+		
+#my-transition {
+background: red;
+transition: width 2s;
+transition-timing-function: ease-in;/*kommer hurtigere ud*/
+		}
+		
+#my-transition:hover {
+width: 600px;			
+		}
+		
+h1 {
+text-shadow: 5px 5px 5px #666;			
+		}
+		
+.spalter {
+column-count: 3;
+		}
+</style>
+	</head>
+
+<body>
+		
+<h2>Skygge</h2>
+<div id="my-shadow"> </div>
+		
+<h2>Farveforløb (gradient)</h2>
+<div id="my-gradient"></div>
+		
+<h2>Rotation</h2>
+<div id="my-rotation"></div>
+		
+<h2>Amimation</h2>
+<div id="my-transition"></div>
+	
+<h1>skygge på tekst</h1>
+<div id="my-shadowtext"></div> 
+	
+<h2>Tekst i spalter</h2>
+	<p class="spalter">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quos, explicabo officia voluptatibus. Voluptates quia, delectus quod sit eius natus repudiandae nisi suscipit recusandae quidem, perspiciatis asperiores! Veniam, nam delectus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quia doloremque ducimus eius laborum ab reiciendis consequuntur beatae deleniti eligendi saepe id iusto, aspernatur commodi repellendus architecto est, ratione veniam.</p>
+			
+</body>
+</html>

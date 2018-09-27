@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+		
+		body{
+			font-family: sans-serif;
+			font-size: 0.8em;
+		}
+		
+		.container {
+			display: flex; /*laver det til en flex container*/
+			width: 1250px;
+			/*skub de børnene ned på næste linje*/
+			flex-wrap: wrap;
+			/*hvordan skal whitespace fordeles? space-around, ligligt fordelet whitespace*/
+			justify-content: space-around;
+			margin-left: auto; /*placering i midten*/
+			margin-right: auto; /*placering i midten*/
+		}
+		.item{
+			background-color: #ddd;
+			border: 1px solid #666;
+			margin-top: 8px;/*den hvide kant*/
+			text-align: center;
+			padding-top: 8px;
+		}
+		.logo{
+			height: 60px;
+			width: 19%; /*breden er 20% af 960px*/
+			text-align: center; 
+		}
+		.global{
+			heigth: 60px; 
+			width: 79%; /*resterne af de 20%, da de er på samme linje - skal op til 100%*/
+		}
+		.lokal{
+			height: 400px; 
+			width: 19%;
+		}
+		.artikel{
+			height: 400px;
+			width: 49%;
+		}
+		.reklame{
+			height: 400px;
+			width: 29%;
+		}
+		.footer{
+			height: 60px;
+			width: 99%;
+		}
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item logo">Logo</div>
+        <nav class="item global">Global navigation</nav>
+        <nav class="item lokal">Lokal navigation</nav>
+        <article class="item artikel">Artikel</article>
+        <div class="item reklame">Reklame</div>
+        <footer class="item footer">Footer</footer>
+    </div>
+</body>
+</html>

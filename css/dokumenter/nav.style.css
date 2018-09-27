@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*CSS reset - skal se ens ud i alle browsere*/
+/*Styling der er der i forvejen, i forskellige browser. Nulstilling af alt margin og padding*/
+*{
+	margin: 0; 
+	padding: 0; 
+	border: none; 
+}
+
+/*den klassiske metode*/
+#navigation {
+	margin-top: 40px;
+	border-bottom: 1px solid red; 
+	float: right;/*slet hvis du vil have det centeret*/
+}
+#navigation li {
+	list-style: none;/*fjerner prikkerne i listen*/
+	display: inline; /*listen skal stå på en linje*/
+}
+#navigation a{/*design af selve linket*/
+	margin: 0 15px 0 15px;/*15px til højre og 15px til venstre*/
+	font-family: arial, sans-serif;
+	font-weight: bold;
+	text-decoration: none;/*fjernelse af linjen under linket*/
+	color: red;
+	/*menuens flapper*/
+	border: 1px solid orange;
+	padding: 5px 10px; 
+	background-color: orange; 
+	border-top-left-radius: 7px;
+	border-top-right-radius: 7px;
+	display: inline-block;
+	width: 100px;
+	border-bottom: hidden; /*gem den nedereste border linje*/
+	text-align: center;
+}
+
+#navigation a:hover {
+	background-color: blue;
+}
+/*styling af det første link alene*/
+#navigation a:first-of-type {
+	margin-left: 0;
+}
+
+/*Flexbox-style*/
+nav {
+	display: flex; /*laver den til en flexbox container*/
+	height: 30px;
+	align-items: center;
+	width: 100%; 
+	position: relative;
+	top: 40px;
+}
+nav a /*styling af links*/ {
+	width: 25%;
+	background-color: blue;
+	color: white;
+	text-decoration: none;
+	padding: 20px;
+	text-align: center;
+	font-family: arial, sans-serif;
+}
+nav a:hover {
+	background: orange;
+}
